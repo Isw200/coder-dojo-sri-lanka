@@ -1,0 +1,95 @@
+.flotingBall {
+  position: absolute;
+  top: 10em;
+  left: 5em;
+  z-index: -10;
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin: 0;
+  background: radial-gradient(
+    circle at 100px 100px,
+    #c65cff5e,
+    rgba(0, 0, 0, 0)
+  );
+  animation-name: flowtingBallAnimation;
+  animation-duration: 10s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes flowtingBallAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(150px, 300px);
+  }
+  50% {
+    transform: translate(1000px, 100px);
+  }
+  70% {
+    transform: translate(1000px, 300px);
+  }
+  85% {
+    transform: translate(1000px, 0px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.robot {
+  position: absolute;
+  bottom: 10em;
+  left: 5em;
+  z-index: -11;
+  display: block;
+  border-radius: 50%;
+  width: 250px;
+  margin: 0;
+  animation-name: robot_walking;
+  animation-duration: 10s;
+  background: null;
+  animation-iteration-count: infinite;
+}
+.robot img {
+  width: 100%;
+}
+
+@keyframes robot_walking {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  48% {
+    transform: translate(600px, 0) rotateY(0deg);
+  }
+  49% {
+    transform: translate(600px, 0) rotateY(180deg);
+  }
+  50% {
+    transform: translate(600px, 0) rotateY(180deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotateY(180deg);
+  }
+}
+
+.flowtingWorld {
+  position: absolute;
+  bottom: -42em;
+  right: 0;
+  z-index: 1000;
+  display: block;
+  border-radius: 50%;
+  width: 800px;
+  z-index: -1;
+}
+.flowtingWorld img {
+  width: 100%;
+  opacity: 0.5;
+}
