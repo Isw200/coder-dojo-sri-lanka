@@ -1,5 +1,200 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*************
+Section 1 
+*************/
+section {
+  width: 75%;
+  margin: auto;
+}
+
+section .section_1 {
+  margin: 6em 0 6em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .section_1 .left {
+  width: 50%;
+}
+section .section_1 .right {
+  width: 50%;
+}
+section .section_1 .right .imageContainer {
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+}
+
+section .section_1 .right .imageContainer img {
+  width: 100%;
+  transform: scale(1);
+  transition: all 1s ease-in-out;
+}
+section .section_1 .right .imageContainer img:hover {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
+.section_1 .left h1 {
+  margin-top: 0.5em;
+  width: 95%;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #842dad;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section_1 .left p {
+  width: 85%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.7em;
+  margin-top: 2em;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section_1 .buttonsContainer {
+  margin-top: 2em;
+  width: 17em;
+  justify-content: space-between;
+  display: flex;
+}
+
+.section_1 .buttonsContainer div {
+  width: 8em;
+  padding: 1em;
+  border-radius: 20px;
+}
+
+.section_1 .buttonsContainer .findDjo {
+  background: #842dad;
+  color: #fff;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid #842dad;
+}
+.section_1 .buttonsContainer .findDjo:hover {
+  border: 2px solid #842dad;
+  background: #fff;
+  color: #842dad;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.section_1 .buttonsContainer .startDojo {
+  border: 2px solid #842dad;
+  color: #842dad;
+  text-align: center;
+}
+.section_1 .buttonsContainer .startDojo:hover {
+  background: #842dad;
+  color: #fff;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid #842dad;
+  cursor: pointer;
+}
+
+/********************
+Section 2
+********************/
+.sec2 {
+  margin-top: 3em;
+  width: 100%;
+  height: 53em;
+  padding: 6em 0 6em 0;
+  background: #f0feff;
+}
+.section_2 {
+  width: 75%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.section_2 .left {
+  width: 45%;
+}
+.section_2 .left .imageContainer {
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  height: 110%;
+}
+.section_2 .left img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section_2 .right {
+  width: 50%;
+}
+
+.section_2 .right h1 {
+  margin-top: 0.5em;
+  width: 95%;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #842dad;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section_2 .right p {
+  width: 85%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.7em;
+  margin-top: 2em;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+.section_2 .buttonsContainer {
+  margin-top: 2em;
+  width: 22em;
+  justify-content: space-between;
+  display: flex;
+}
+
+.section_2 .buttonsContainer div {
+  width: 10em;
+  padding: 1em;
+  border-radius: 20px;
+}
+
+.section_2 .buttonsContainer .findDjo {
+  background: #842dad;
+  color: #fff;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid #842dad;
+}
+.section_2 .buttonsContainer .findDjo:hover {
+  border: 2px solid #842dad;
+  background: #fff;
+  color: #842dad;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.section_2 .buttonsContainer .startDojo {
+  border: 2px solid #842dad;
+  color: #842dad;
+  text-align: center;
+}
+.section_2 .buttonsContainer .startDojo:hover {
+  background: #842dad;
+  color: #fff;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid #842dad;
+  cursor: pointer;
 }
